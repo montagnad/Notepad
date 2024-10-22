@@ -31,24 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlocoDeNotas));
             this.barraDeMenu = new System.Windows.Forms.MenuStrip();
             this.arquivo = new System.Windows.Forms.ToolStripMenuItem();
-            this.arquivoNovo = new System.Windows.Forms.ToolStripMenuItem();
-            this.arquivoAbrir = new System.Windows.Forms.ToolStripMenuItem();
-            this.arquivoSalvar = new System.Windows.Forms.ToolStripMenuItem();
-            this.arquivoSalvarComo = new System.Windows.Forms.ToolStripMenuItem();
-            this.arquivoSair = new System.Windows.Forms.ToolStripMenuItem();
             this.editar = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarDesfazer = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarRecortar = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarCopiar = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarColar = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarSelecionarTudo = new System.Windows.Forms.ToolStripMenuItem();
             this.formatar = new System.Windows.Forms.ToolStripMenuItem();
-            this.formatarQuebraDeLinha = new System.Windows.Forms.ToolStripMenuItem();
-            this.formatarFonte = new System.Windows.Forms.ToolStripMenuItem();
             this.exibir = new System.Windows.Forms.ToolStripMenuItem();
             this.exibirBarraDeStatus = new System.Windows.Forms.ToolStripMenuItem();
             this.ajuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.barraDeStatus = new System.Windows.Forms.StatusStrip();
             this.labelLinha = new System.Windows.Forms.ToolStripStatusLabel();
             this.labelLine = new System.Windows.Forms.ToolStripStatusLabel();
@@ -56,6 +43,19 @@
             this.labelColuna = new System.Windows.Forms.ToolStripStatusLabel();
             this.labelColumn = new System.Windows.Forms.ToolStripStatusLabel();
             this.caixaDeTexto = new System.Windows.Forms.RichTextBox();
+            this.arquivoNovo = new System.Windows.Forms.ToolStripMenuItem();
+            this.arquivoAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.arquivoSalvar = new System.Windows.Forms.ToolStripMenuItem();
+            this.arquivoSalvarComo = new System.Windows.Forms.ToolStripMenuItem();
+            this.arquivoSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarDesfazer = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarRecortar = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarCopiar = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarColar = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarSelecionarTudo = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatarQuebraDeLinha = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatarFonte = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.barraDeMenu.SuspendLayout();
             this.barraDeStatus.SuspendLayout();
             this.SuspendLayout();
@@ -86,43 +86,6 @@
             this.arquivo.Size = new System.Drawing.Size(61, 20);
             this.arquivo.Text = "Arquivo";
             // 
-            // arquivoNovo
-            // 
-            this.arquivoNovo.Image = ((System.Drawing.Image)(resources.GetObject("arquivoNovo.Image")));
-            this.arquivoNovo.Name = "arquivoNovo";
-            this.arquivoNovo.Size = new System.Drawing.Size(180, 22);
-            this.arquivoNovo.Text = "Novo";
-            this.arquivoNovo.ToolTipText = "Crie um novo arquivo";
-            // 
-            // arquivoAbrir
-            // 
-            this.arquivoAbrir.Image = global::Notepad.Properties.Resources.icons8_abrir_arquivo_96;
-            this.arquivoAbrir.Name = "arquivoAbrir";
-            this.arquivoAbrir.Size = new System.Drawing.Size(141, 22);
-            this.arquivoAbrir.Text = "Abrir";
-            // 
-            // arquivoSalvar
-            // 
-            this.arquivoSalvar.Image = global::Notepad.Properties.Resources.icons8_salvar_96;
-            this.arquivoSalvar.Name = "arquivoSalvar";
-            this.arquivoSalvar.Size = new System.Drawing.Size(141, 22);
-            this.arquivoSalvar.Text = "Salvar";
-            // 
-            // arquivoSalvarComo
-            // 
-            this.arquivoSalvarComo.Image = global::Notepad.Properties.Resources.icons8_salvar_como_96;
-            this.arquivoSalvarComo.Name = "arquivoSalvarComo";
-            this.arquivoSalvarComo.Size = new System.Drawing.Size(141, 22);
-            this.arquivoSalvarComo.Text = "Salvar Como";
-            // 
-            // arquivoSair
-            // 
-            this.arquivoSair.Image = global::Notepad.Properties.Resources.icons8_sair_96;
-            this.arquivoSair.Name = "arquivoSair";
-            this.arquivoSair.Size = new System.Drawing.Size(180, 22);
-            this.arquivoSair.Text = "Sair";
-            this.arquivoSair.Click += new System.EventHandler(this.arquivoSair_Click);
-            // 
             // editar
             // 
             this.editar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -135,41 +98,6 @@
             this.editar.Size = new System.Drawing.Size(49, 20);
             this.editar.Text = "Editar";
             // 
-            // editarDesfazer
-            // 
-            this.editarDesfazer.Image = global::Notepad.Properties.Resources.icons8_desfazer_96;
-            this.editarDesfazer.Name = "editarDesfazer";
-            this.editarDesfazer.Size = new System.Drawing.Size(159, 22);
-            this.editarDesfazer.Text = "Desfazer";
-            // 
-            // editarRecortar
-            // 
-            this.editarRecortar.Image = global::Notepad.Properties.Resources.icons8_cortar_96;
-            this.editarRecortar.Name = "editarRecortar";
-            this.editarRecortar.Size = new System.Drawing.Size(159, 22);
-            this.editarRecortar.Text = "Recortar";
-            // 
-            // editarCopiar
-            // 
-            this.editarCopiar.Image = global::Notepad.Properties.Resources.icons8_copiar_96;
-            this.editarCopiar.Name = "editarCopiar";
-            this.editarCopiar.Size = new System.Drawing.Size(159, 22);
-            this.editarCopiar.Text = "Copiar";
-            // 
-            // editarColar
-            // 
-            this.editarColar.Image = global::Notepad.Properties.Resources.icons8_colar_96;
-            this.editarColar.Name = "editarColar";
-            this.editarColar.Size = new System.Drawing.Size(159, 22);
-            this.editarColar.Text = "Colar";
-            // 
-            // editarSelecionarTudo
-            // 
-            this.editarSelecionarTudo.Image = global::Notepad.Properties.Resources.icons8_selecionar_tudo_96;
-            this.editarSelecionarTudo.Name = "editarSelecionarTudo";
-            this.editarSelecionarTudo.Size = new System.Drawing.Size(159, 22);
-            this.editarSelecionarTudo.Text = "Selecionar Tudo";
-            // 
             // formatar
             // 
             this.formatar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -178,24 +106,6 @@
             this.formatar.Name = "formatar";
             this.formatar.Size = new System.Drawing.Size(67, 20);
             this.formatar.Text = "Formatar";
-            // 
-            // formatarQuebraDeLinha
-            // 
-            this.formatarQuebraDeLinha.Checked = true;
-            this.formatarQuebraDeLinha.CheckOnClick = true;
-            this.formatarQuebraDeLinha.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.formatarQuebraDeLinha.Image = global::Notepad.Properties.Resources.icons8_quebra_de_linha_96;
-            this.formatarQuebraDeLinha.Name = "formatarQuebraDeLinha";
-            this.formatarQuebraDeLinha.Size = new System.Drawing.Size(180, 22);
-            this.formatarQuebraDeLinha.Text = "Quebra de Linha";
-            this.formatarQuebraDeLinha.Click += new System.EventHandler(this.formatarQuebraDeLinha_Click);
-            // 
-            // formatarFonte
-            // 
-            this.formatarFonte.Image = global::Notepad.Properties.Resources.icons8_fonte_96;
-            this.formatarFonte.Name = "formatarFonte";
-            this.formatarFonte.Size = new System.Drawing.Size(161, 22);
-            this.formatarFonte.Text = "Fonte";
             // 
             // exibir
             // 
@@ -222,14 +132,6 @@
             this.ajuda.Name = "ajuda";
             this.ajuda.Size = new System.Drawing.Size(50, 20);
             this.ajuda.Text = "Ajuda";
-            // 
-            // ajudaSobre
-            // 
-            this.ajudaSobre.Image = global::Notepad.Properties.Resources.icons8_informações_96;
-            this.ajudaSobre.Name = "ajudaSobre";
-            this.ajudaSobre.Size = new System.Drawing.Size(180, 22);
-            this.ajudaSobre.Text = "Sobre";
-            this.ajudaSobre.Click += new System.EventHandler(this.ajudaSobre_Click);
             // 
             // barraDeStatus
             // 
@@ -294,6 +196,104 @@
             this.caixaDeTexto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.caixaDeTexto_KeyPress);
             this.caixaDeTexto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.caixaDeTexto_MouseDown);
             // 
+            // arquivoNovo
+            // 
+            this.arquivoNovo.Image = ((System.Drawing.Image)(resources.GetObject("arquivoNovo.Image")));
+            this.arquivoNovo.Name = "arquivoNovo";
+            this.arquivoNovo.Size = new System.Drawing.Size(141, 22);
+            this.arquivoNovo.Text = "Novo";
+            this.arquivoNovo.ToolTipText = "Crie um novo arquivo";
+            // 
+            // arquivoAbrir
+            // 
+            this.arquivoAbrir.Image = global::Notepad.Properties.Resources.icons8_abrir_arquivo_96;
+            this.arquivoAbrir.Name = "arquivoAbrir";
+            this.arquivoAbrir.Size = new System.Drawing.Size(141, 22);
+            this.arquivoAbrir.Text = "Abrir";
+            // 
+            // arquivoSalvar
+            // 
+            this.arquivoSalvar.Image = global::Notepad.Properties.Resources.icons8_salvar_96;
+            this.arquivoSalvar.Name = "arquivoSalvar";
+            this.arquivoSalvar.Size = new System.Drawing.Size(141, 22);
+            this.arquivoSalvar.Text = "Salvar";
+            // 
+            // arquivoSalvarComo
+            // 
+            this.arquivoSalvarComo.Image = global::Notepad.Properties.Resources.icons8_salvar_como_96;
+            this.arquivoSalvarComo.Name = "arquivoSalvarComo";
+            this.arquivoSalvarComo.Size = new System.Drawing.Size(141, 22);
+            this.arquivoSalvarComo.Text = "Salvar Como";
+            // 
+            // arquivoSair
+            // 
+            this.arquivoSair.Image = global::Notepad.Properties.Resources.icons8_sair_96;
+            this.arquivoSair.Name = "arquivoSair";
+            this.arquivoSair.Size = new System.Drawing.Size(141, 22);
+            this.arquivoSair.Text = "Sair";
+            this.arquivoSair.Click += new System.EventHandler(this.arquivoSair_Click);
+            // 
+            // editarDesfazer
+            // 
+            this.editarDesfazer.Image = global::Notepad.Properties.Resources.icons8_desfazer_96;
+            this.editarDesfazer.Name = "editarDesfazer";
+            this.editarDesfazer.Size = new System.Drawing.Size(159, 22);
+            this.editarDesfazer.Text = "Desfazer";
+            // 
+            // editarRecortar
+            // 
+            this.editarRecortar.Image = global::Notepad.Properties.Resources.icons8_cortar_96;
+            this.editarRecortar.Name = "editarRecortar";
+            this.editarRecortar.Size = new System.Drawing.Size(159, 22);
+            this.editarRecortar.Text = "Recortar";
+            // 
+            // editarCopiar
+            // 
+            this.editarCopiar.Image = global::Notepad.Properties.Resources.icons8_copiar_96;
+            this.editarCopiar.Name = "editarCopiar";
+            this.editarCopiar.Size = new System.Drawing.Size(159, 22);
+            this.editarCopiar.Text = "Copiar";
+            // 
+            // editarColar
+            // 
+            this.editarColar.Image = global::Notepad.Properties.Resources.icons8_colar_96;
+            this.editarColar.Name = "editarColar";
+            this.editarColar.Size = new System.Drawing.Size(159, 22);
+            this.editarColar.Text = "Colar";
+            // 
+            // editarSelecionarTudo
+            // 
+            this.editarSelecionarTudo.Image = global::Notepad.Properties.Resources.icons8_selecionar_tudo_96;
+            this.editarSelecionarTudo.Name = "editarSelecionarTudo";
+            this.editarSelecionarTudo.Size = new System.Drawing.Size(159, 22);
+            this.editarSelecionarTudo.Text = "Selecionar Tudo";
+            // 
+            // formatarQuebraDeLinha
+            // 
+            this.formatarQuebraDeLinha.Checked = true;
+            this.formatarQuebraDeLinha.CheckOnClick = true;
+            this.formatarQuebraDeLinha.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.formatarQuebraDeLinha.Image = global::Notepad.Properties.Resources.icons8_quebra_de_linha_96;
+            this.formatarQuebraDeLinha.Name = "formatarQuebraDeLinha";
+            this.formatarQuebraDeLinha.Size = new System.Drawing.Size(161, 22);
+            this.formatarQuebraDeLinha.Text = "Quebra de Linha";
+            this.formatarQuebraDeLinha.Click += new System.EventHandler(this.formatarQuebraDeLinha_Click);
+            // 
+            // formatarFonte
+            // 
+            this.formatarFonte.Image = global::Notepad.Properties.Resources.icons8_fonte_96;
+            this.formatarFonte.Name = "formatarFonte";
+            this.formatarFonte.Size = new System.Drawing.Size(161, 22);
+            this.formatarFonte.Text = "Fonte";
+            // 
+            // ajudaSobre
+            // 
+            this.ajudaSobre.Image = global::Notepad.Properties.Resources.icons8_informações_96;
+            this.ajudaSobre.Name = "ajudaSobre";
+            this.ajudaSobre.Size = new System.Drawing.Size(180, 22);
+            this.ajudaSobre.Text = "Sobre";
+            this.ajudaSobre.Click += new System.EventHandler(this.ajudaSobre_Click);
+            // 
             // BlocoDeNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,6 +302,7 @@
             this.Controls.Add(this.caixaDeTexto);
             this.Controls.Add(this.barraDeStatus);
             this.Controls.Add(this.barraDeMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.barraDeMenu;
             this.Name = "BlocoDeNotas";
             this.Text = "CtrlAltDanrlei Notepad";
