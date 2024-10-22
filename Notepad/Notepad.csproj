@@ -46,14 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Sobre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notepad.Designer.cs">
+      <DependentUpon>Notepad.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notepad.resx">
+      <DependentUpon>Notepad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +88,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-abrir-arquivo-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salvar-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salvar-como-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sair-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-selecionar-tudo-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-colar-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-copiar-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cortar-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-desfazer-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fonte-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-quebra-de-linha-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-informações-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CtrlAltDanrlei  Notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CtrlAltDanrlei  Notepad %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CtrlAltDanrlei  Notepad %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

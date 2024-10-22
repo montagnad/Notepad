@@ -117,53 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Design sem nome" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Design sem nome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="barraDeMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="arquivoNovo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        /gOHxVL5m1VNpwAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="icons8-quebra-de-linha-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-quebra-de-linha-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-fonte-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-fonte-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-copiar-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-copiar-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-desfazer-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-desfazer-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-colar-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-colar-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-salvar-como-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-salvar-como-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-informações-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-informações-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-abrir-arquivo-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-abrir-arquivo-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CtrlAltDanrlei  Notepad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CtrlAltDanrlei  Notepad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-sair-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-sair-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CtrlAltDanrlei  Notepad (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CtrlAltDanrlei  Notepad (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-cortar-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-cortar-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-selecionar-tudo-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-selecionar-tudo-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-salvar-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-salvar-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CtrlAltDanrlei  Notepad (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CtrlAltDanrlei  Notepad (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="barraDeStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>115</value>
+  </metadata>
 </root>
