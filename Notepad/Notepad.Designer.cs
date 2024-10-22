@@ -305,7 +305,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.barraDeMenu;
             this.Name = "BlocoDeNotas";
-            this.Text = "CtrlAltDanrlei Notepad";
+            this.Text = "CtrlAltDanrlei | Notepad";
             this.barraDeMenu.ResumeLayout(false);
             this.barraDeMenu.PerformLayout();
             this.barraDeStatus.ResumeLayout(false);
