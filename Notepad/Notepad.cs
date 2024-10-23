@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Notepad;
 
 namespace Notepad
 {
@@ -16,13 +19,14 @@ namespace Notepad
         public BlocoDeNotas()
         {
             InitializeComponent();
-            labelLine.Text = "0";
-            labelColumn.Text = "0";
+           
+            labelLine.Text = "1";
+            labelColumn.Text = "1";
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void barraDeStatusToolStripMenuItem_Click(object sender, EventArgs e)
@@ -38,11 +42,6 @@ namespace Notepad
         private void caixaDeTexto_TextChanged(object sender, EventArgs e)
         {
             labelLine.Text = caixaDeTexto.SelectionStart.ToString();
-        }
-
-        private void caixaDeTexto_CursorPositionChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void caixaDeTexto_CursorChanged(object sender, EventArgs e)
@@ -91,13 +90,67 @@ namespace Notepad
 
         private void arquivoSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); // fecha a aplicação
         }
 
         private void ajudaSobre_Click(object sender, EventArgs e)
         {
-            Sobre s1 = new Sobre();
+            Sobre s1 = new Sobre(); // exibe a tela do Sobre
             s1.ShowDialog();
+        }
+
+        private void editarCopiar_Click(object sender, EventArgs e)
+        {
+            caixaDeTexto.Copy(); // copia o texto selecionado
+        }
+
+        private void editarColar_Click(object sender, EventArgs e)
+        {
+            caixaDeTexto.Paste(); // cola o texto que está na área de transferência
+        }
+
+        private void editarSelecionarTudo_Click(object sender, EventArgs e)
+        {
+            caixaDeTexto.SelectAll(); // seleciona todo o texto dentro da richtextbox
+        }
+
+        private void editarRecortar_Click(object sender, EventArgs e)
+        {
+            caixaDeTexto.Cut(); // recorta o texto selecionado
+        }
+
+        private void contextoRecortar_Click(object sender, EventArgs e)
+        {
+            caixaDeTexto.Cut(); // recorta o texto selecionado
+        }
+
+        private void contextoCopiar_Click(object sender, EventArgs e)
+        {
+            caixaDeTexto.Copy(); // copia o texto selecionado
+        }
+
+        private void contextoColar_Click(object sender, EventArgs e)
+        {
+            caixaDeTexto.Paste(); // cola o texto que está na área de transferência
+        }
+
+        private void contextoSelecionarTudo_Click(object sender, EventArgs e)
+        {
+            caixaDeTexto.SelectAll(); // seleciona todo o texto dentro da richtextbox
+        }
+
+        private void formatarFonte_Click(object sender, EventArgs e)
+        {
+            seletorDeFonte.ShowColor = true;
+
+            seletorDeFonte.Font = caixaDeTexto.Font; // aplica ao seletor a fonte atual para inicializar
+            seletorDeFonte.Color = caixaDeTexto.ForeColor; // aplica ao seletor a cor atual para inicializar
+
+            if (seletorDeFonte.ShowDialog() != DialogResult.Cancel) // caso não seja clicado em cancelar
+            {
+                caixaDeTexto.SelectionFont = seletorDeFonte.Font; // aplica ao texto selecionado a fonte
+                caixaDeTexto.SelectionColor = seletorDeFonte.Color; // aplica ao texto selecionado a cor
+            }
         }
     }
 }
