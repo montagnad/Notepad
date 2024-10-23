@@ -152,5 +152,10 @@ namespace Notepad
                 caixaDeTexto.SelectionColor = seletorDeFonte.Color; // aplica ao texto selecionado a cor
             }
         }
+
+        private void seletorDeFonte_Apply(object sender, EventArgs e)
+        {
+
+        }
     }
 }
