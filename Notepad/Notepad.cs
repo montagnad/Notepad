@@ -143,8 +143,8 @@ namespace Notepad
         {
             seletorDeFonte.ShowColor = true;
 
-            seletorDeFonte.Font = caixaDeTexto.Font; // aplica ao seletor a fonte atual para inicializar
-            seletorDeFonte.Color = caixaDeTexto.ForeColor; // aplica ao seletor a cor atual para inicializar
+            seletorDeFonte.Font = caixaDeTexto.SelectionFont; // aplica ao seletor a fonte atual para inicializar
+            seletorDeFonte.Color = caixaDeTexto.SelectionColor; // aplica ao seletor a cor atual para inicializar
 
             if (seletorDeFonte.ShowDialog() != DialogResult.Cancel) // caso não seja clicado em cancelar
             {
