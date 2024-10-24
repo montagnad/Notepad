@@ -89,6 +89,16 @@ namespace Notepad
                 labelLine.Text = caixaDeTexto.SelectionStart.ToString();
                 labelLine.Text = caixaDeTexto.SelectionStart.ToString();
             }
+            if (e.KeyData == Keys.Alt)
+            {
+                barraDeMenu.Visible = true;
+            }
+            if (e.KeyData == Keys.ControlKey && e.KeyData == Keys.V)
+            {
+                if (Clipboard.ContainsText())
+                    caixaDeTexto.Paste(DataFormats.GetFormat(DataFormats.Text));
+                e.Handled = true;
+            }
         }
 
         private void arquivoSair_Click(object sender, EventArgs e)
@@ -109,7 +119,10 @@ namespace Notepad
 
         private void editarColar_Click(object sender, EventArgs e)
         {
-            caixaDeTexto.Paste(); // cola o texto que está na área de transferência
+            if (Clipboard.ContainsText()) // testa se o que está vindo do clipboard contém texto
+            {
+                caixaDeTexto.Paste(DataFormats.GetFormat(DataFormats.Text)); // cola apenas o texto
+            }
         }
 
         private void editarSelecionarTudo_Click(object sender, EventArgs e)
@@ -134,7 +147,10 @@ namespace Notepad
 
         private void contextoColar_Click(object sender, EventArgs e)
         {
-            caixaDeTexto.Paste(); // cola o texto que está na área de transferência
+            if (Clipboard.ContainsText()) // testa se o que está vindo do clipboard contém texto
+            {
+                caixaDeTexto.Paste(DataFormats.GetFormat(DataFormats.Text)); // cola apenas o texto
+            }
         }
 
         private void contextoSelecionarTudo_Click(object sender, EventArgs e)
@@ -191,6 +207,11 @@ namespace Notepad
             //{
             //    filestream = saveFileDialog1.OpenFile();
             //}
+        }
+
+        private void barraDeMenuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            barraDeMenu.Visible = !barraDeMenu.Visible; // alterna se a barra de menu no topo é visível ou não
         }
     }
 }

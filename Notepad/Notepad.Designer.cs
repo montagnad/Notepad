@@ -67,6 +67,7 @@ namespace Notepad
             this.contextoSelecionarTudo = new System.Windows.Forms.ToolStripMenuItem();
             this.seletorDeFonte = new System.Windows.Forms.FontDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.barraDeMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barraDeMenu.SuspendLayout();
             this.barraDeStatus.SuspendLayout();
             this.menuDeContexto.SuspendLayout();
@@ -83,8 +84,8 @@ namespace Notepad
             this.ajuda});
             this.barraDeMenu.Location = new System.Drawing.Point(0, 0);
             this.barraDeMenu.Name = "barraDeMenu";
-            this.barraDeMenu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.barraDeMenu.Size = new System.Drawing.Size(1200, 24);
+            this.barraDeMenu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.barraDeMenu.Size = new System.Drawing.Size(1600, 28);
             this.barraDeMenu.TabIndex = 0;
             this.barraDeMenu.Text = "menuStrip1";
             // 
@@ -97,7 +98,7 @@ namespace Notepad
             this.arquivoSalvarComo,
             this.arquivoSair});
             this.arquivo.Name = "arquivo";
-            this.arquivo.Size = new System.Drawing.Size(61, 20);
+            this.arquivo.Size = new System.Drawing.Size(75, 24);
             this.arquivo.Text = "Arquivo";
             // 
             // arquivoNovo
@@ -105,7 +106,7 @@ namespace Notepad
             this.arquivoNovo.Image = ((System.Drawing.Image)(resources.GetObject("arquivoNovo.Image")));
             this.arquivoNovo.Name = "arquivoNovo";
             this.arquivoNovo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.arquivoNovo.Size = new System.Drawing.Size(217, 26);
+            this.arquivoNovo.Size = new System.Drawing.Size(266, 26);
             this.arquivoNovo.Text = "Novo";
             this.arquivoNovo.ToolTipText = "Crie um novo arquivo";
             // 
@@ -114,7 +115,7 @@ namespace Notepad
             this.arquivoAbrir.Image = global::Notepad.Properties.Resources.icons8_abrir_arquivo_96;
             this.arquivoAbrir.Name = "arquivoAbrir";
             this.arquivoAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.arquivoAbrir.Size = new System.Drawing.Size(217, 26);
+            this.arquivoAbrir.Size = new System.Drawing.Size(266, 26);
             this.arquivoAbrir.Text = "Abrir";
             this.arquivoAbrir.Click += new System.EventHandler(this.arquivoAbrir_Click);
             // 
@@ -123,7 +124,7 @@ namespace Notepad
             this.arquivoSalvar.Image = global::Notepad.Properties.Resources.icons8_salvar_96;
             this.arquivoSalvar.Name = "arquivoSalvar";
             this.arquivoSalvar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.arquivoSalvar.Size = new System.Drawing.Size(217, 26);
+            this.arquivoSalvar.Size = new System.Drawing.Size(266, 26);
             this.arquivoSalvar.Text = "Salvar";
             this.arquivoSalvar.Click += new System.EventHandler(this.arquivoSalvar_Click);
             // 
@@ -133,7 +134,7 @@ namespace Notepad
             this.arquivoSalvarComo.Name = "arquivoSalvarComo";
             this.arquivoSalvarComo.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
-            this.arquivoSalvarComo.Size = new System.Drawing.Size(217, 26);
+            this.arquivoSalvarComo.Size = new System.Drawing.Size(266, 26);
             this.arquivoSalvarComo.Text = "Salvar Como";
             // 
             // arquivoSair
@@ -141,7 +142,7 @@ namespace Notepad
             this.arquivoSair.Image = global::Notepad.Properties.Resources.icons8_sair_96;
             this.arquivoSair.Name = "arquivoSair";
             this.arquivoSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.arquivoSair.Size = new System.Drawing.Size(217, 26);
+            this.arquivoSair.Size = new System.Drawing.Size(266, 26);
             this.arquivoSair.Text = "Sair";
             this.arquivoSair.Click += new System.EventHandler(this.arquivoSair_Click);
             // 
@@ -154,7 +155,7 @@ namespace Notepad
             this.editarColar,
             this.editarSelecionarTudo});
             this.editar.Name = "editar";
-            this.editar.Size = new System.Drawing.Size(49, 20);
+            this.editar.Size = new System.Drawing.Size(62, 24);
             this.editar.Text = "Editar";
             // 
             // editarDesfazer
@@ -162,7 +163,7 @@ namespace Notepad
             this.editarDesfazer.Image = global::Notepad.Properties.Resources.icons8_desfazer_96;
             this.editarDesfazer.Name = "editarDesfazer";
             this.editarDesfazer.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.editarDesfazer.Size = new System.Drawing.Size(201, 22);
+            this.editarDesfazer.Size = new System.Drawing.Size(251, 26);
             this.editarDesfazer.Text = "Desfazer";
             // 
             // editarRecortar
@@ -170,7 +171,7 @@ namespace Notepad
             this.editarRecortar.Image = global::Notepad.Properties.Resources.icons8_cortar_96;
             this.editarRecortar.Name = "editarRecortar";
             this.editarRecortar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.editarRecortar.Size = new System.Drawing.Size(201, 22);
+            this.editarRecortar.Size = new System.Drawing.Size(251, 26);
             this.editarRecortar.Text = "Recortar";
             this.editarRecortar.Click += new System.EventHandler(this.editarRecortar_Click);
             // 
@@ -179,7 +180,7 @@ namespace Notepad
             this.editarCopiar.Image = global::Notepad.Properties.Resources.icons8_copiar_96;
             this.editarCopiar.Name = "editarCopiar";
             this.editarCopiar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.editarCopiar.Size = new System.Drawing.Size(201, 22);
+            this.editarCopiar.Size = new System.Drawing.Size(251, 26);
             this.editarCopiar.Text = "Copiar";
             this.editarCopiar.Click += new System.EventHandler(this.editarCopiar_Click);
             // 
@@ -188,7 +189,7 @@ namespace Notepad
             this.editarColar.Image = global::Notepad.Properties.Resources.icons8_colar_96;
             this.editarColar.Name = "editarColar";
             this.editarColar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.editarColar.Size = new System.Drawing.Size(201, 22);
+            this.editarColar.Size = new System.Drawing.Size(251, 26);
             this.editarColar.Text = "Colar";
             this.editarColar.Click += new System.EventHandler(this.editarColar_Click);
             // 
@@ -197,7 +198,7 @@ namespace Notepad
             this.editarSelecionarTudo.Image = global::Notepad.Properties.Resources.icons8_selecionar_tudo_96;
             this.editarSelecionarTudo.Name = "editarSelecionarTudo";
             this.editarSelecionarTudo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.editarSelecionarTudo.Size = new System.Drawing.Size(201, 22);
+            this.editarSelecionarTudo.Size = new System.Drawing.Size(251, 26);
             this.editarSelecionarTudo.Text = "Selecionar Tudo";
             this.editarSelecionarTudo.Click += new System.EventHandler(this.editarSelecionarTudo_Click);
             // 
@@ -207,7 +208,7 @@ namespace Notepad
             this.formatarQuebraDeLinha,
             this.formatarFonte});
             this.formatar.Name = "formatar";
-            this.formatar.Size = new System.Drawing.Size(67, 20);
+            this.formatar.Size = new System.Drawing.Size(83, 24);
             this.formatar.Text = "Formatar";
             // 
             // formatarQuebraDeLinha
@@ -217,7 +218,7 @@ namespace Notepad
             this.formatarQuebraDeLinha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.formatarQuebraDeLinha.Image = global::Notepad.Properties.Resources.icons8_quebra_de_linha_96;
             this.formatarQuebraDeLinha.Name = "formatarQuebraDeLinha";
-            this.formatarQuebraDeLinha.Size = new System.Drawing.Size(184, 26);
+            this.formatarQuebraDeLinha.Size = new System.Drawing.Size(201, 26);
             this.formatarQuebraDeLinha.Text = "Quebra de Linha";
             this.formatarQuebraDeLinha.Click += new System.EventHandler(this.formatarQuebraDeLinha_Click);
             // 
@@ -225,16 +226,17 @@ namespace Notepad
             // 
             this.formatarFonte.Image = global::Notepad.Properties.Resources.icons8_fonte_96;
             this.formatarFonte.Name = "formatarFonte";
-            this.formatarFonte.Size = new System.Drawing.Size(184, 26);
+            this.formatarFonte.Size = new System.Drawing.Size(201, 26);
             this.formatarFonte.Text = "Fonte";
             this.formatarFonte.Click += new System.EventHandler(this.formatarFonte_Click);
             // 
             // exibir
             // 
             this.exibir.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.barraDeMenuToolStripMenuItem,
             this.exibirBarraDeStatus});
             this.exibir.Name = "exibir";
-            this.exibir.Size = new System.Drawing.Size(47, 20);
+            this.exibir.Size = new System.Drawing.Size(60, 24);
             this.exibir.Text = "Exibir";
             // 
             // exibirBarraDeStatus
@@ -243,7 +245,7 @@ namespace Notepad
             this.exibirBarraDeStatus.CheckOnClick = true;
             this.exibirBarraDeStatus.CheckState = System.Windows.Forms.CheckState.Checked;
             this.exibirBarraDeStatus.Name = "exibirBarraDeStatus";
-            this.exibirBarraDeStatus.Size = new System.Drawing.Size(152, 22);
+            this.exibirBarraDeStatus.Size = new System.Drawing.Size(192, 26);
             this.exibirBarraDeStatus.Text = "Barra de Status";
             this.exibirBarraDeStatus.Click += new System.EventHandler(this.barraDeStatusToolStripMenuItem_Click);
             // 
@@ -252,7 +254,7 @@ namespace Notepad
             this.ajuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajudaSobre});
             this.ajuda.Name = "ajuda";
-            this.ajuda.Size = new System.Drawing.Size(50, 20);
+            this.ajuda.Size = new System.Drawing.Size(62, 24);
             this.ajuda.Text = "Ajuda";
             // 
             // ajudaSobre
@@ -262,7 +264,7 @@ namespace Notepad
             this.ajudaSobre.RightToLeftAutoMirrorImage = true;
             this.ajudaSobre.ShortcutKeyDisplayString = "";
             this.ajudaSobre.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.ajudaSobre.Size = new System.Drawing.Size(123, 22);
+            this.ajudaSobre.Size = new System.Drawing.Size(155, 26);
             this.ajudaSobre.Text = "Sobre";
             this.ajudaSobre.Click += new System.EventHandler(this.ajudaSobre_Click);
             // 
@@ -275,41 +277,42 @@ namespace Notepad
             this.labelDivisor,
             this.labelColuna,
             this.labelColumn});
-            this.barraDeStatus.Location = new System.Drawing.Point(0, 578);
+            this.barraDeStatus.Location = new System.Drawing.Point(0, 712);
             this.barraDeStatus.Name = "barraDeStatus";
-            this.barraDeStatus.Size = new System.Drawing.Size(1200, 22);
+            this.barraDeStatus.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.barraDeStatus.Size = new System.Drawing.Size(1600, 26);
             this.barraDeStatus.TabIndex = 1;
             this.barraDeStatus.Text = "statusStrip1";
             // 
             // labelLinha
             // 
             this.labelLinha.Name = "labelLinha";
-            this.labelLinha.Size = new System.Drawing.Size(20, 17);
+            this.labelLinha.Size = new System.Drawing.Size(24, 20);
             this.labelLinha.Text = "Ln";
             this.labelLinha.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // labelLine
             // 
             this.labelLine.Name = "labelLine";
-            this.labelLine.Size = new System.Drawing.Size(26, 17);
+            this.labelLine.Size = new System.Drawing.Size(33, 20);
             this.labelLine.Text = "line";
             // 
             // labelDivisor
             // 
             this.labelDivisor.Name = "labelDivisor";
-            this.labelDivisor.Size = new System.Drawing.Size(10, 17);
+            this.labelDivisor.Size = new System.Drawing.Size(13, 20);
             this.labelDivisor.Text = "|";
             // 
             // labelColuna
             // 
             this.labelColuna.Name = "labelColuna";
-            this.labelColuna.Size = new System.Drawing.Size(25, 17);
+            this.labelColuna.Size = new System.Drawing.Size(31, 20);
             this.labelColuna.Text = "Col";
             // 
             // labelColumn
             // 
             this.labelColumn.Name = "labelColumn";
-            this.labelColumn.Size = new System.Drawing.Size(48, 17);
+            this.labelColumn.Size = new System.Drawing.Size(58, 20);
             this.labelColumn.Text = "column";
             // 
             // caixaDeTexto
@@ -322,9 +325,10 @@ namespace Notepad
             this.caixaDeTexto.EnableAutoDragDrop = true;
             this.caixaDeTexto.Font = new System.Drawing.Font("Consolas", 10F);
             this.caixaDeTexto.HideSelection = false;
-            this.caixaDeTexto.Location = new System.Drawing.Point(12, 27);
+            this.caixaDeTexto.Location = new System.Drawing.Point(0, 32);
+            this.caixaDeTexto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.caixaDeTexto.Name = "caixaDeTexto";
-            this.caixaDeTexto.Size = new System.Drawing.Size(1176, 548);
+            this.caixaDeTexto.Size = new System.Drawing.Size(1600, 676);
             this.caixaDeTexto.TabIndex = 2;
             this.caixaDeTexto.Text = "";
             this.caixaDeTexto.CursorChanged += new System.EventHandler(this.caixaDeTexto_CursorChanged);
@@ -344,20 +348,20 @@ namespace Notepad
             this.contextoColar,
             this.contextoSelecionarTudo});
             this.menuDeContexto.Name = "menuDeContexto";
-            this.menuDeContexto.Size = new System.Drawing.Size(164, 134);
+            this.menuDeContexto.Size = new System.Drawing.Size(190, 134);
             // 
             // contextoDesfazer
             // 
             this.contextoDesfazer.Image = global::Notepad.Properties.Resources.icons8_desfazer_96;
             this.contextoDesfazer.Name = "contextoDesfazer";
-            this.contextoDesfazer.Size = new System.Drawing.Size(163, 26);
+            this.contextoDesfazer.Size = new System.Drawing.Size(189, 26);
             this.contextoDesfazer.Text = "Desfazer";
             // 
             // contextoRecortar
             // 
             this.contextoRecortar.Image = global::Notepad.Properties.Resources.icons8_cortar_96;
             this.contextoRecortar.Name = "contextoRecortar";
-            this.contextoRecortar.Size = new System.Drawing.Size(163, 26);
+            this.contextoRecortar.Size = new System.Drawing.Size(189, 26);
             this.contextoRecortar.Text = "Recortar";
             this.contextoRecortar.Click += new System.EventHandler(this.contextoRecortar_Click);
             // 
@@ -365,7 +369,7 @@ namespace Notepad
             // 
             this.contextoCopiar.Image = global::Notepad.Properties.Resources.icons8_copiar_96;
             this.contextoCopiar.Name = "contextoCopiar";
-            this.contextoCopiar.Size = new System.Drawing.Size(163, 26);
+            this.contextoCopiar.Size = new System.Drawing.Size(189, 26);
             this.contextoCopiar.Text = "Copiar";
             this.contextoCopiar.Click += new System.EventHandler(this.contextoCopiar_Click);
             // 
@@ -373,7 +377,7 @@ namespace Notepad
             // 
             this.contextoColar.Image = global::Notepad.Properties.Resources.icons8_colar_96;
             this.contextoColar.Name = "contextoColar";
-            this.contextoColar.Size = new System.Drawing.Size(163, 26);
+            this.contextoColar.Size = new System.Drawing.Size(189, 26);
             this.contextoColar.Text = "Colar";
             this.contextoColar.Click += new System.EventHandler(this.contextoColar_Click);
             // 
@@ -381,7 +385,7 @@ namespace Notepad
             // 
             this.contextoSelecionarTudo.Image = global::Notepad.Properties.Resources.icons8_selecionar_tudo_96;
             this.contextoSelecionarTudo.Name = "contextoSelecionarTudo";
-            this.contextoSelecionarTudo.Size = new System.Drawing.Size(163, 26);
+            this.contextoSelecionarTudo.Size = new System.Drawing.Size(189, 26);
             this.contextoSelecionarTudo.Text = "Selecionar Tudo";
             this.contextoSelecionarTudo.Click += new System.EventHandler(this.contextoSelecionarTudo_Click);
             // 
@@ -390,17 +394,29 @@ namespace Notepad
             this.seletorDeFonte.ShowApply = true;
             this.seletorDeFonte.Apply += new System.EventHandler(this.seletorDeFonte_Apply);
             // 
+            // barraDeMenuToolStripMenuItem
+            // 
+            this.barraDeMenuToolStripMenuItem.Checked = true;
+            this.barraDeMenuToolStripMenuItem.CheckOnClick = true;
+            this.barraDeMenuToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.barraDeMenuToolStripMenuItem.Name = "barraDeMenuToolStripMenuItem";
+            this.barraDeMenuToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
+            this.barraDeMenuToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.barraDeMenuToolStripMenuItem.Text = "Barra de Menu";
+            this.barraDeMenuToolStripMenuItem.Click += new System.EventHandler(this.barraDeMenuToolStripMenuItem_Click);
+            // 
             // BlocoDeNotas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 600);
-            this.Controls.Add(this.caixaDeTexto);
-            this.Controls.Add(this.barraDeStatus);
+            this.ClientSize = new System.Drawing.Size(1600, 738);
             this.Controls.Add(this.barraDeMenu);
+            this.Controls.Add(this.barraDeStatus);
+            this.Controls.Add(this.caixaDeTexto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.barraDeMenu;
-            this.MinimumSize = new System.Drawing.Size(300, 200);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(394, 235);
             this.Name = "BlocoDeNotas";
             this.Text = "CtrlAltDanrlei | Notepad";
             this.barraDeMenu.ResumeLayout(false);
@@ -450,6 +466,7 @@ namespace Notepad
         private System.Windows.Forms.ToolStripMenuItem contextoSelecionarTudo;
         private System.Windows.Forms.FontDialog seletorDeFonte;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem barraDeMenuToolStripMenuItem;
     }
 }
 
