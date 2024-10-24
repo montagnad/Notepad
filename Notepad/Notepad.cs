@@ -4,13 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Notepad;
+//using Notepad;
 
 namespace Notepad
 {
@@ -22,6 +23,8 @@ namespace Notepad
            
             labelLine.Text = "1";
             labelColumn.Text = "1";
+
+            MemoryStream entradaDoUsuario = new MemoryStream();
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
@@ -146,7 +149,7 @@ namespace Notepad
             seletorDeFonte.Font = caixaDeTexto.SelectionFont; // aplica ao seletor a fonte atual para inicializar
             seletorDeFonte.Color = caixaDeTexto.SelectionColor; // aplica ao seletor a cor atual para inicializar
 
-            if (seletorDeFonte.ShowDialog() != DialogResult.Cancel) // caso não seja clicado em cancelar
+            if (seletorDeFonte.ShowDialog() == DialogResult.OK) // caso seja clicado em OK
             {
                 caixaDeTexto.SelectionFont = seletorDeFonte.Font; // aplica ao texto selecionado a fonte
                 caixaDeTexto.SelectionColor = seletorDeFonte.Color; // aplica ao texto selecionado a cor
@@ -155,7 +158,39 @@ namespace Notepad
 
         private void seletorDeFonte_Apply(object sender, EventArgs e)
         {
+            caixaDeTexto.SelectionFont = seletorDeFonte.Font; // aplica ao texto selecionado a fonte
+            caixaDeTexto.SelectionColor = seletorDeFonte.Color; // aplica ao texto selecionado a cor
+        }
 
+        private void arquivoAbrir_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrirArquivo = new OpenFileDialog(); // exibe a tela para selecionar um arquivo para abrir
+            abrirArquivo.Filter = "Arquivos de texto (*.txt)|*.txt"; // filtra a tela de seleção, permitindo apenas arquivos .txt
+
+            if (abrirArquivo.ShowDialog() == DialogResult.OK) { // se clicar em ok
+                StreamReader dadosDoArquivo = new StreamReader(abrirArquivo.FileName, Encoding.UTF8); // passa o arquivo TXT pelo encoder UTF-8
+                caixaDeTexto.Text = dadosDoArquivo.ReadToEnd(); // carrega o TXT na richtextbox
+            }
+        }
+
+        private void arquivoSalvar_Click(object sender, EventArgs e)
+        {
+            //saveFileDialog1.CreatePrompt = true;
+            //saveFileDialog1.OverwritePrompt = true;
+
+            //saveFileDialog1.FileName = "Documento de texto";
+            //saveFileDialog1.DefaultExt = "txt";
+
+            //saveFileDialog1.Filter = "Arquivos de texto (*.txt)|*.txt|Todos os arquivos (*.*)|*.*";
+            //saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            //DialogResult resultado = saveFileDialog1.ShowDialog();
+            //Stream filestream;
+
+            //if (resultado == DialogResult.OK)
+            //{
+            //    filestream = saveFileDialog1.OpenFile();
+            //}
         }
     }
 }
