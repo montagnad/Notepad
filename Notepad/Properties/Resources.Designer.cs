@@ -103,6 +103,16 @@ namespace Notepad.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fecharguia {
+            get {
+                object obj = ResourceManager.GetObject("fecharguia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_abrir_arquivo_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-abrir-arquivo-96", resourceCulture);
@@ -216,6 +226,16 @@ namespace Notepad.Properties {
         internal static System.Drawing.Bitmap icons8_selecionar_tudo_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-selecionar-tudo-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap novaguia {
+            get {
+                object obj = ResourceManager.GetObject("novaguia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

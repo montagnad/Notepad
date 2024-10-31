@@ -213,5 +213,16 @@ namespace Notepad
         {
             barraDeMenu.Visible = !barraDeMenu.Visible; // alterna se a barra de menu no topo é visível ou não
         }
+
+        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void testeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Base s1 = new Base(); // exibe a tela do Sobre
+            s1.ShowDialog();
+        }
     }
 }
